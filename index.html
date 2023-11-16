@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReDi School</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="head.png" alt="Redi Logo">
+        </div>
+      </header>
+    <main>
+        
+    <h1>Uncover Tomorrow’s Talent Today!</h1>
+    <h3>Join ReDI Today and Shape Your Future!
+    <br>Recruiters, find your future workforce. Students, showcase your potential. It all starts here. Sign up now!</h3>
+    <div class="buttons">
+    <button id="button1"><h1>Recruiters</h1><h1>Discover Your Ideal Hire!</h1><h2>Tap into a Pool of Exeptional Student Talent!</h2></button>
+    <button id="button2"><h1>Students</h1><h1>Propel Your Career!</h1><h2>Elevate Your CV, Seize Opportunities!</h2></button>
+    </div>
+
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("button1").addEventListener("click", function() {
+          window.location.href = "page_2_rec.html";
+      });
+
+      document.getElementById("button2").addEventListener("click", function() {
+          window.location.href = "page_3_leaveCV.html";
+      });
+  });
+</script>
+
+</body>
+</html>
