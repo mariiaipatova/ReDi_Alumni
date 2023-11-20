@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer=""></script>
     <title>Students' page</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+          <img src="head.png" alt="Redi Logo">
+        </div>
+      </header>
     <h1>Leave Your CV</h1> 
-    <button id="button4">Click</button>
+    <div class="form-container">
+            <h2>Add New Profile</h2>
+            <form id="profileForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+        
+              <label for="category">Category:</label>
+              <select id="category" required>
+                <option value="dataAnalytics">Data Analytics</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="javascript">JavaScript</option>
+                <option value="uxUiDesign">UX/UI Design</option>
+              </select>
+        
+              <label for="skills">Skills:</label>
+              <input type="text" id="skills" required>
+        
+              <label for="photo">Photo URL:</label>
+              <input type="url" id="photo" required>
+        
+              <button type="button" onclick="addProfile()">Add Profile</button>
+            </form>
+            <a href="page_4_meetOurStudents.html">Go to Students</a>
+          </div>
+          <script src="script.js"></script>
 </body>
 </html>
