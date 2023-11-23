@@ -93,7 +93,22 @@ h2{
   
   .form-container {
     margin-top: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 33px;
+    max-width: 1996px;
+    height: 555px;
   }
+
+.form-container h1 {
+  color: black;
+  text-align: center;
+  font-size: 28px;
+}
+
+
   
   /* Responsive Styles */
   @media screen and (max-width: 768px) {
