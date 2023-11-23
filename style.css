@@ -1,41 +1,80 @@
+html {
+  max-width: auto;
+  height: auto;
+}
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-family: 'Nunito Sans', Arial, sans-serif;
   }
   main{
+    padding-top: 100px;
     padding-left: 50px ;
     padding-bottom: 300px;
     padding-right: 50px;
     text-align: center;
+    background-image: url(back\ photo.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
   }
  h1 {
-font: size 36px; 
+font-size: 40px;
+font-weight: 800;
+color: rgba(255, 255, 255, 1);
+}
 
- } 
- h2 {
-    font: size 28px; 
-     } 
+ 
+h2{
+  font-size: 28px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+
+
   header {
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 1);
     padding: 80px;
-    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: left;
   }
   
   .logo img {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    max-height: 85px;
     top: auto;
     left: auto;
     padding: auto;
   }
   
-  button {
-    color: rgb(68, 58, 59);
-    background-color: bisque;
-    max-width: 900px;
-    max-height: 600px;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  button {
+    background-color: rgba(134, 134, 134, 0.5);
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #button1 {
+    width: 561px;
+    height: 288px;
+    margin-right: 20px;
+  }
+
+#button2 {
+    width: 561px;
+    height: 288px;
+    margin-right: 20px;
+  }
+
   .filter {
     margin-bottom: 20px;
   }
