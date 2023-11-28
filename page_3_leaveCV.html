@@ -12,54 +12,81 @@
 <body>
   <header>
     <a href="index.html">
-    <div class="logo">
-      <img src="head.png" alt="Redi Logo">
-    </div>
-  </a>
+      <div class="logo">
+        <img src="head.png" alt="Redi Logo">
+      </div>
+    </a>
   </header>
   <div class="form-container">
     <h1>Time For Your Job Information!</h1>
-
     <form id="profileForm">
-      <label for="photo" accept=".jpg, .png">Photo URL:</label>
-      <input type="url" id="photo" required>
-      <br>
-      <label for="name">Your Full Name</label>
-      <input type="text" id="name" required placeholder="Justin Biener">
-      <br>
-      <label for="academicBackground">Academic Background</label>
-      <input type="text" id="academicBackground" required placeholder="Degree(s) Obtained">
-      <br>
-      <label for="employmentStatus">Current Employment Status</label>
-      <input type="text" id="employmentStatus" required placeholder="Employed, Unemplyed, Student, etc.">
-      <br>
-      <label for="experience">Professional Experience</label>
-      <input type="url" id="experience" placeholder="Job Title/Position; Brief Desription of Current Role">
-      <br>
-      <label for="skills">Skills and Competences</label>
-      <input type="text" id="skills" required placeholder="Technical and Soft Skills">
-      <br>
-      <label for="e-mail">Your E-Mail</label>
-      <input type="email" id="e-mail" required placeholder="@gmail.com">
-      <br>
-      <label for="linkedin">linkedin Profile</label>
-      <input type="url" id="linkedin" required placeholder="http://www.link.com">
-      <br>
-      <label for="phone">Phone Number</label>
-      <input type="text" id="phone" required placeholder="+45667627628">
-      <br>
-      <label for="cvUpload">Upload CV</label>
-      <input type="file" id="cvUpload" accept=".pdf, .doc, .docx">
+      <div class="form-columns">
+        <div class="form-column">
+          <div class="form-group">
+            <label for="photo" accept=".jpg, .png">Photo URL:</label>
+            <input type="url" id="photo" required placeholder="http://www.photo.com">
+          </div>
+          <div class="form-group">
+            <label for="name">Your Full Name</label>
+            <input type="text" id="name" required placeholder="Justin Biener">
+          </div>
+          <div class="form-group">
+            <label for="academicBackground">Academic Background</label>
+            <input type="text" id="academicBackground" required placeholder="Degree(s) Obtained">
+          </div>
+          <div class="form-group">
+            <label for="employmentStatus">Current Employment Status</label>
+            <input type="text" id="employmentStatus" required placeholder="Employed, Unemployed, Student, etc.">
+          </div>
+          <div class="form-group">
+            <label for="experience">Professional Experience</label>
+            <input type="text" id="experience" placeholder="Job Title/Position; Brief Description of Current Role">
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="skills">Skills and Competences</label>
+            <input type="text" id="skills" required placeholder="Technical and Soft Skills">
+          </div>
+          <div class="form-group">
+            <label for="e-mail">Your E-Mail</label>
+            <input type="email" id="e-mail" required placeholder="@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="linkedin">LinkedIn Profile</label>
+            <input type="url" id="linkedin" required placeholder="http://www.link.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" required placeholder="+45667627628">
+            <div class="button-container">
+              <div class="form-upload">
+                <label for="cvUpload" class="label-as-button">Upload CV</label>
+                <input type="file" id="cvUpload" accept=".pdf, .doc, .docx">
+              </div>
+              <div class="form-upload">
+                <label for="portfolioUpload" class="label-as-button">Upload Portfolio</label>
+                <input type="file" id="portfolioUpload" accept=".pdf, .doc, .docx">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    
 
-      <label for="portfolioUpload">Upload Portfolio</label>
-      <input type="file" id="portfolioUpload" accept=".pdf, .doc, .docx">
-<br>
-      <button type="button" onclick="addProfile()">Add Profile</button>
+    <div class="submit-button">
+      <button type="button" onclick="addProfile()">Submit</button>
+    </div>
     </form>
-    <br>
-    <a href="page_4_meetOurStudents.html">Go to Students</a>
   </div>
   <script src="script.js"></script>
 </body>
-
+<div class="girl-Img">
+  <img src="Girl.png" alt="Redi Girl">
+</div>
+<br>
+<div class="man-Img">
+  <img src="Man mid.png" alt="Redi Man">
+</div>
 </html>
