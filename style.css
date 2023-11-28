@@ -45,7 +45,19 @@ header {
   left: auto;
   padding: auto;
 }
+.girl-Img {
+  position: absolute;
+  left: 75px; /* Adjust the left position as needed */
+  top: 60%; /* Adjust the top position as needed */
+  transform: translateY(-50%);
+}
 
+.man-Img {
+  position: absolute;
+  right: 75px; /* Adjust the right position as needed */
+  top: 60%; /* Adjust the top position as needed */
+  transform: translateY(-50%);
+}
 .buttons {
   display: flex;
   justify-content: center;
@@ -155,10 +167,14 @@ button {
 input[type="file"] {
   display: none;
 }
+.label-as-button,
+.submit-button button {
+  width: 100%; /* Ensuring buttons are full-width on smaller screens */
+}
 
 .label-as-button {
   display: inline-block;
-  width: 206px;
+  width: 160px;
   max-height: 44px;
   padding: 10px 15px;
   background-color: #58ADC5;
@@ -172,15 +188,17 @@ input[type="file"] {
 
 .button-container {
   display: flex;
-  justify-content: right;
-  align-items: right;
-  margin-top: -55px; /* Adjust margin as needed */
-  margin-bottom: 20px;
-  margin-right: 25px;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+  justify-content: center;
+  align-items: center;
+  margin-left: -50px;
+  margin-top: 34px;
+  margin-bottom: 2px;
+  margin-right: -50px;
 }
 
-.button-container .form-upload:first-child {
-  padding-right: 3px;
+.button-container .form-upload {
+  margin-right: 13px; /* Add spacing between buttons */
 }
 
 .form-upload {
@@ -222,16 +240,17 @@ input[type="file"] {
   }
   .label-as-button {
     width: 100%; /* Make the button fill the width on smaller screens */
-  } 
-  
-  .button-container {
-    justify-content: center; /* Center the button on smaller screens */
-    margin-top: -25px; /* Adjust margin as needed */
-    margin-right: 0;
+   
   }
 
-  .button-container .form-upload {
-    margin-right: 0;
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: flex-end; /* Align buttons to the right on smaller screens */
+    margin-top: 0;
+  }
+
+  .button-container .form-upload:first-child {
+    margin-bottom: 10px; /* Add spacing between buttons on smaller screens */
   }
 
   header {
@@ -245,4 +264,17 @@ input[type="file"] {
   button {
     max-width: 100%; /* Make the button fill the width on smaller screens */
   }
+
+  .girl-Img,
+  .man-Img {
+    position: static; /* Reset position for smaller screens */
+    transform: none; /* Reset transform for smaller screens */
+    margin-top: 20px; /* Adjust margin-top as needed for spacing */
+  }
+
+
+  .man-Img {
+    order: -1; /* Move man image above the form on smaller screens */
+  }
+
 }
