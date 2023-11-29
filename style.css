@@ -242,13 +242,14 @@ input[type="file"] {
   margin: 1%;
   border: 1px solid #ccc;
   border-radius: 20px;
-  background-color: antiquewhite;
+  background-color: rgba(255, 255, 255, 1);
   padding: 10px;
   display: inline-block; /* Make cards display inline */
   vertical-align: top; /* Align cards to the top of the container */
   box-sizing: border-box;
   width: calc(33.333% - 2%); /* Adjust the width to create a small gap between cards */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 1px 1px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -269,6 +270,10 @@ input[type="file"] {
 .profilesGrid {
   display:inline;
   overflow-x: scroll;
+  flex-wrap: wrap;
+}
+.card:hover {
+  transform: scale(1.03);
 }
 
 
