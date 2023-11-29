@@ -54,7 +54,7 @@ function addProfile() {
     
     // After adding a new profile, re-render the profiles on the 4th page
     if (window.location.pathname.includes('page_3_leaveCV.html')) {
-      window.location.href = "page_4_meetOurStudents.html";
+      window.location.href = "page_6.html";
     }
   } else {
     alert('Please fill in all required fields.');
