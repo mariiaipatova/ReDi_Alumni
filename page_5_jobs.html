@@ -1,26 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReDi School</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <a href="index.html">
-    <div class="logo">
-      <img src="head.png" alt="Redi Logo">
+    <link rel="stylesheet" href="page_5.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="head.png" alt="Redi Logo" />
+        </div>
+      </a>
+    </header>
+    <main>
+      <h1>Work and Internship</h1>
+      <h2>
+        Open Doors to Your Future: Connect with Your Ideal Career Matches!
+      </h2>
+    </main>
+
+    <div class="inputbox">
+      <div class="container">
+        <div class="raw">
+          <div class="sort-container">
+            <label for="position">Position</label>
+            <select class="select" id="position">
+              <option value="all">Choose the option</option>
+              <option value="designer">UI/UX Design</option>
+              <option value="javascript">JavaScript</option>
+              <option value="cyber security">Cyber Security</option>
+              <option value="dataAnalytic">Data Analytics</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="sort-container">
+            <label for="job">Job Location</label>
+            <select class="select" id="job">
+              <option value="choose the option">Choose the option</option>
+              <option value="remote job">Remote Job</option>
+              <option value="offline job">Offline Job</option>
+            </select>
+          </div>
+        </div>
+        <div class="raw">
+          <div class="sort-container">
+            <label for="experience">Experience Level</label>
+            <select class="select" id="experience">
+              <option value="choose the option">Choose the option</option>
+              <option value="entry">Intern</option>
+              <option value="intermediate">Junior</option>
+              <option value="middle">Middle</option>
+              <option value="senior">Senior</option>
+            </select>
+          </div>
+
+          <div class="sort-container">
+            <label for="sort">Sort</label>
+            <select class="select" id="sort">
+              <option value="choose the option">Choose the option</option>
+              <option value="most popular">Most Popular</option>
+              <option value="newest first">Newest First</option>
+              <option value="oldest first">Oldest First</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="button" onclick="filter()">Search</button>
+      </div>
     </div>
-  </a>
-  </header>
-      <main>
- <h1>Work and Internship</h1>
-    <h2>Open Doors to Your Future: Connect with Your Ideal Career Matches!</h2>
 
-    <!-- тут нужно будет убрать фон, я пыталась прописать это в общем style.css, но не получилось и думаю, проще будет сделать отдельный css файл для этой страницы -->
-</main>
+    <div id="results" class="blocks">
+      <div style="width: 33%">
+        <div
+          class="block-item designer"
+          data-id="design"
+          style="background-color: #ff9a74"
+        >
+          <div class="position">UI Designer</div>
+          <div class="expirience">Internship</div>
+          <div class="description">
+            Fantastic opportunity at an innovative company offering generous
+            compensation.
+          </div>
+        </div>
 
-</body>
+        <div
+          class="block-item dataAnalytic"
+          data-id="dataAnalytic"
+          style="background-color: rgba(184, 231, 244, 1)"
+        >
+          <div class="position">Data Analytic</div>
+          <div class="expirience">Internship</div>
+          <div class="description">
+            Exceptional role at an exciting company, offering substantial
+            rewards.
+          </div>
+        </div>
+      </div>
+      <div style="width: 33%">
+        <div
+          class="block-item javascript"
+          data-id="javascript"
+          style="background-color: rgba(184, 231, 244, 1)"
+        >
+          <div class="position">Developer</div>
+          <div class="expirience">Junior position</div>
+          <div class="description">
+            Great position at a cool company wit awesome perks.
+          </div>
+        </div>
+
+        <div
+          class="block-item javascript"
+          data-id="javascript"
+          style="background-color: #ff9a74"
+          ;
+        >
+          <div class="position">Developer</div>
+          <div class="expirience">Senior position</div>
+          <div class="description">
+            Fantastic gig at a super scool company with amazing perks!
+          </div>
+        </div>
+      </div>
+      <div style="width: 33%">
+        <div
+          class="block-item designer"
+          data-id="designer"
+          style="background-color: #ff9a74"
+        >
+          <div class="position" value="designer">UX Researcher</div>
+          <div class="expirience">Internship</div>
+          <div class="description">
+            In-demand position at a company with exceptional benefits and
+            opportunities.
+          </div>
+        </div>
+
+        <div
+          class="block-item other"
+          data-id="other"
+          style="background-color: rgba(184, 231, 244, 1)"
+          ;
+        >
+          <div class="position">Customer Support</div>
+          <div class="expirience">No experience</div>
+          <div class="description">
+            Super nice position in very cool company with a lot of money!
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="page_5.js"></script>
 </html>
