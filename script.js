@@ -21,10 +21,36 @@ function renderProfiles() {
 
 function renderDefaultProfiles(container) {
   const defaultProfiles = [
-    { photo: 'default photo 1.png', name: 'Default Student 2', academicBackground: 'Business Administration', employmentStatus: 'Student', experience: 'Marketing Intern', skills: 'Marketing, Social Media', linkedin: 'https://www.linkedin.com/in/defaultstudent2/' },
-    { photo: 'default photo 2.png', name: 'Default Student 1', academicBackground: 'Computer Science', employmentStatus: 'Student', experience: 'Intern', skills: 'JavaScript, HTML, CSS', linkedin: 'https://www.linkedin.com/in/defaultstudent1/' },
-    { photo: 'default photo 3.png', name: 'Default Student 2', academicBackground: 'Business Administration', employmentStatus: 'Student', experience: 'Marketing Intern', skills: 'Marketing, Social Media', linkedin: 'https://www.linkedin.com/in/defaultstudent2/' },    // Add more default profiles as needed
+    {
+      photo: 'default photo 1.png',
+      name: 'Incredible Coder',
+      academicBackground: 'Computer Science',
+      employmentStatus: 'Tech Enthusiast',
+      experience: 'Coding Wizardry',
+      skills: 'JavaScript, Python, Web Development',
+      linkedin: 'https://www.linkedin.com/in/incrediblecoder/'
+    },
+    {
+      photo: 'default photo 2.png',
+      name: 'Creative Explorer',
+      academicBackground: 'Fine Arts',
+      employmentStatus: 'Creative Visionary',
+      experience: 'Crafting Imagination',
+      skills: 'Painting, Sculpting, Visual Arts',
+      linkedin: 'https://www.linkedin.com/in/creativeexplorer/'
+    },
+    {
+      photo: 'default photo 3.png',
+      name: 'Captain Innovator',
+      academicBackground: 'Innovation Studies',
+      employmentStatus: 'Innovation Evangelist',
+      experience: 'Driving Change and Progress',
+      skills: 'Problem Solving, Leadership, Strategy',
+      linkedin: 'https://www.linkedin.com/in/captaininnovator/'
+    },
+    // Add more default profiles as needed
   ];
+  
 
   defaultProfiles.forEach(profile => {
     createProfileCard(container, profile);
@@ -41,7 +67,7 @@ function createProfileCard(container, profile) {
     <p>Current Employment Status: ${profile.employmentStatus}</p>
     <p>Professional Experience: ${profile.experience}</p>
     <p>Skills and Competences: ${profile.skills}</p>
-    <p>LinkedIn ${profile.linkedin}</p>
+    <p>LinkedIn: ${profile.linkedin}</p>
   `;
   container.appendChild(card);
 }
@@ -67,7 +93,7 @@ function addProfile() {
     // Save the updated profiles back to local storage
     localStorage.setItem('profiles', JSON.stringify(profiles));
 
-    alert('Profile added successfully!');
+  
     
     // After adding a new profile, re-render the profiles on the 4th page
     if (window.location.pathname.includes('page_3_leaveCV.html')) {
