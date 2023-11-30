@@ -7,10 +7,10 @@ body {
   font-family: "Nunito Sans", Arial, sans-serif;
 }
 main {
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-bottom: 300px;
-  padding-right: 50px;
+  padding-top: 10vh;
+  padding-left: 5vh;
+  padding-bottom: 20vh;
+  padding-right: 5vh;
   text-align: center;
   background-image: url(back\ photo.png);
   background-repeat: no-repeat;
