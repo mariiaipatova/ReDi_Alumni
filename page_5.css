@@ -1,0 +1,142 @@
+body,
+html {
+  font-family: "Nunito Sans";
+}
+
+.logo img {
+  max-width: 311px;
+  max-height: 72px;
+  top: auto;
+  left: 15px;
+  padding: auto;
+}
+header {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.raw {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 25px 25px;
+}
+.container {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  color: rgba(36, 71, 81, 1);
+}
+.select {
+  border-radius: 18px;
+  border-color: #58adc5;
+  max-width: 368.31px;
+  max-height: 44px;
+  top: 330px;
+  left: 583px;
+  border-radius: 18px;
+  padding: 11px, 10px;
+  font-size: 16px;
+  line-height: 21.82px;
+}
+.sort-container {
+  display: flex;
+  margin-top: px;
+  margin-right: px;
+  margin-left: px;
+  border-color: #58adc5;
+  border-radius: 18px;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.sort-container label {
+  margin-bottom: 5px;
+}
+.inputbox {
+  display: flex;
+  padding: auto;
+}
+.button {
+  width: 206px;
+  height: 44px;
+  top: 330px;
+  left: 989px;
+  background-color: rgba(88, 173, 197, 1);
+  font-family: "Nunito Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 21.82 px;
+  text-align: center;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 44px 0px;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 80%;
+  margin: auto;
+}
+
+#results .block-item {
+  padding: 26px;
+
+  border-radius: 10px;
+  width: 240px;
+  height: 220px;
+  margin-bottom: 50px;
+}
+
+#results .block-item .position {
+  color: rgb(42, 10, 10);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#results .block-item .expirience {
+  color: black;
+  font-style: italic;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#results .block-item .description {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 800px;
+  color: #244751;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600px;
+  color: #922d07;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 80%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
