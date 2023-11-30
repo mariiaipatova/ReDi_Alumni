@@ -87,7 +87,7 @@ button {
   width: 100%; 
   max-width: 561px;
   height: 288px; 
-  margin: 10%; 
+  margin-right: 10%;
 }
 #button1 h2 {
   font-style: italic;
@@ -99,7 +99,9 @@ button {
   height: 288px; 
   margin: 10px 0; 
 }
-
+#button2 h2 {
+  font-style: italic;
+}
 #button3 {
   background-color: rgba(255, 154, 116, 0.5);
   max-width: 300px;
